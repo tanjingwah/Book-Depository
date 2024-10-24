@@ -18,6 +18,11 @@ body {
   box-sizing: border-box;
 }
 
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0px;
+}
+
 .main-container {
   display: flex;
   flex-direction: column; /* Stack items vertically */
@@ -35,7 +40,7 @@ body {
   max-width: 100%;
   scroll-snap-type: x mandatory;
   white-space: nowrap;
-  padding: 123px 0 20px 0;
+  padding: 100px 0 20px 0;
   position: relative;
 }
 /* Remove default scrollbar styling */
@@ -163,11 +168,11 @@ body {
 }
 
 /* Media query for mobile devices */
-@media (max-width: 768px) {
+@media (max-width: 809px) {
   .scrollsnap-carousel {
     width: 150vh; /* Make it full width on smaller screens */
-    height: 60vh; /* Adjust height for smaller screens */
-    padding: 80px 0 10px 0; /* Adjust padding */
+    height: 55vh; /* Adjust height for smaller screens */
+    padding: 30px 0 10px 0; /* Adjust padding */
   }
 
   .scrollsnap-carousel .slide {
@@ -190,9 +195,12 @@ body {
     /* Adjust any content-specific styles as needed */
   }
 
-  /* Adjust h1 font size */
+  
   .main-container h1 {
-    font-size: 1.5em; /* Adjust font size for mobile */
+    font-size: 1.3rem; /* Adjust font size for mobile */
+  }
+  .main-container h1 {
+    font-size: 1rem; /* Adjust font size for mobile */
   }
 }
 
@@ -200,12 +208,12 @@ body {
 @media (max-width: 480px) {
   .scrollsnap-carousel {
     width: 150vh; /* Make it full width on smaller screens */
-    height: 60vh; /* Adjust height for smaller screens */
-    padding: 235px 0 10px 0; /* Adjust padding */
+    height: 80vh; /* Adjust height for smaller screens */
+    padding: 120px 0 10px 0; /* Adjust padding */
   }
 
   .scrollsnap-carousel .slide {
-    width: calc(100% / 3); /* Show 3 slides visible at once */
+    width: calc(100% / 2.5); /* Show 3 slides visible at once */
   }
 
   .scrollsnap-carousel .slide:first-of-type {
@@ -221,7 +229,11 @@ body {
   }
 
   .main-container h1 {
-    font-size: 1.2em; /* Adjust font size for very small screens */
+    font-size: 1.3em; /* Adjust font size for very small screens */
+  }
+
+  .main-container h3 {
+    font-size: 0.8rem;
   }
 }
 
